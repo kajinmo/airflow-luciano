@@ -34,9 +34,9 @@ def api_postgres():
     def task_add_pokemon_to_db():
         return add_pokemon_to_db()
     
-    t1 = task_gerar_numero_aleatorio
-    t2 = task_fetch_pokemon_data
-    t3 = task_add_pokemon_to_db
+    t1 = task_gerar_numero_aleatorio()
+    t2 = task_fetch_pokemon_data(t1)
+    t3 = task_add_pokemon_to_db(t2)
 
     t1 >> t2 >> t3
 
