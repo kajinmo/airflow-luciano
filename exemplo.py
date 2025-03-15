@@ -7,6 +7,8 @@ from pydantic import BaseModel
 #- faz a validação
 #- transforma o json num objeto python (desserialização)
 
+# pandera trabalha com dataframe, acima de 1 milhão
+
 
 class PokemonShema(BaseModel):
     name: str
